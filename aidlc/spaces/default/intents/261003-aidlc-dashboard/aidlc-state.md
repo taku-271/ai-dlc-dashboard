@@ -60,7 +60,7 @@ AIエージェントたちの作業状況を一目で把握し、特に「自分
 - **Scope**: mvp
 - **Start Date**: 2026-10-03T15:24:05Z
 - **State Version**: 7
-- **Active Agent**: aidlc-product-agent
+- **Active Agent**: aidlc-design-agent
 - **Worktree Path**:
 - **Bolt Refs**:
 - **Practices Affirmed Timestamp**:
@@ -79,8 +79,8 @@ AIエージェントたちの作業状況を一目で把握し、特に「自分
 
 ## Execution Plan Summary
 - **Total Stages**: 21
-- **Completed**: 5
-- **In Progress**: scope-definition
+- **Completed**: 6
+- **In Progress**: rough-mockups
 
 ## Runtime State
 - **Revision Count**: 0
@@ -106,9 +106,9 @@ AIエージェントたちの作業状況を一目で把握し、特に「自分
 - [x] intent-capture — EXECUTE
 - [ ] market-research — SKIP
 - [x] feasibility — EXECUTE
-- [?] scope-definition — EXECUTE
+- [x] scope-definition — EXECUTE
 - [ ] team-formation — SKIP
-- [ ] rough-mockups — EXECUTE
+- [-] rough-mockups — EXECUTE
 - [ ] approval-handoff — SKIP
 
 ### INCEPTION PHASE
@@ -142,12 +142,12 @@ Per unit: [TBD]
 
 ## Current Status
 - **Lifecycle Phase**: IDEATION
-- **Current Stage**: scope-definition
-- **Next Stage**: rough-mockups
+- **Current Stage**: rough-mockups
+- **Next Stage**: practices-discovery
 - **Status**: Running
-- **Last Updated**: 2026-10-08T01:46:33Z
+- **Last Updated**: 2026-10-10T07:51:51Z
 
 ## Session Resume Point
-- **Last Completed Stage**: feasibility
-- **Next Action**: Execute Scope Definition
+- **Last Completed Stage**: scope-definition
+- **Next Action**: Execute Rough Mockups
 - **Pending Artifacts**: none
