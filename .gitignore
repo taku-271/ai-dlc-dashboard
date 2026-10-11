@@ -43,6 +43,8 @@ aidlc/.aidlc-clone-id
 aidlc/.aidlc-sessions/
 aidlc/spaces/*/intents/*/runtime-graph.json
 aidlc/spaces/*/intents/*/.aidlc-*
+# Hook heartbeat timestamps (rewritten on every hook fire; read by --doctor).
+aidlc/spaces/*/intents/.aidlc-hooks-health/
 #
 # COMMITTED (NOT ignored, listed here for the record — do NOT add ignore rules
 # for these): aidlc/spaces/*/memory/** · aidlc/spaces/*/codekb/** ·
