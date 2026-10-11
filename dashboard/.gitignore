@@ -1,0 +1,4 @@
+node_modules/
+# Written by the AI-DLC type-check sensor hook (not by the dashboard) when it resolves
+# its output dir from this tsconfig.json.
+aidlc/
