@@ -11,7 +11,7 @@ B. 書き方の取り決めから始めて、3区分レビューまで作る
 C. 元の依頼の画面仕様3・4をすべて作る
 X. Other (please specify)
 
-[Answer]:
+[Answer]: A（最小版）
 
 ## 質問2: v2 の成功をどう判断しますか？
 
@@ -20,4 +20,4 @@ B. 承認するたびに、確認範囲（差分のみ / 全文）が記録と�
 C. A と B の両方
 X. Other (please specify)
 
-[Answer]:
+[Answer]: C（両方）
