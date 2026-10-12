@@ -5,12 +5,5 @@
     "dirName": "261011-dashboard-v1",
     "scope": "poc",
     "status": "complete"
-  },
-  {
-    "uuid": "01a129d5-56f0-714a-80a7-2567829c6b70",
-    "slug": "dashboard-v2",
-    "dirName": "261011-dashboard-v2",
-    "scope": "poc",
-    "status": "in-flight"
   }
 ]
