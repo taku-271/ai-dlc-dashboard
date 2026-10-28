@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "session-board",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["run", "src/server.ts"],
+      "port": 4319
+    }
+  ]
+}
