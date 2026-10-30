@@ -47,6 +47,10 @@
 <!-- Decisions made in earlier stages that should not be re-asked. -->
 <!-- Format: DECIDED: [decision] (Stage [slug], [date]) -->
 
+- 複数プロジェクト（別リポジトリ）の横断表示は将来要件だが、MVPのデータモデルとUIは複数プロジェクト前提で設計する（表示階層: プロジェクト → Space → Intent → ステージ） (learned 2026-10-03) <!-- cid:intent-capture:c4 -->
+- タブタイトルの承認待ち件数と承認待ち一覧は、全プロジェクト横断の合計／一覧として扱う (learned 2026-10-03) <!-- cid:intent-capture:c5 -->
+- 監視対象プロジェクトはダッシュボード側の設定ファイルのみで指定する（当初要件のパス引数・カレントディレクトリによる指定は設けない） (learned 2026-10-03) <!-- cid:intent-capture:c6 -->
+- ダッシュボードへの変更の伝達は、ユーザー全体の設定に置いた Claude Code のフックによる自動の合図とファイルの読み直しで行い、MCP は使わない（ファイル監視は OS 差、MCP は送り忘れとファイルとのずれのため不採用） (learned 2026-10-04) <!-- cid:feasibility:c6 -->
 ## Scope Overrides
 
 <!-- Custom scope rules for this project. -->
@@ -71,3 +75,8 @@ ALWAYS ツールが出力する英語メッセージ（`print` / `error` ディ�
 
 <!-- Project-specific corrections from human feedback. -->
 <!-- Format: NEVER/ALWAYS [behavior] (learned [date]) -->
+- 質問票では、要件文で既に明確な項目は再質問せず、問題の大きさ・成功指標・利用文脈・前提の妥当性など未確定の点に絞って質問する (learned 2026-10-03) <!-- cid:intent-capture:c1 -->
+- 質問への回答途中で要件が変わったときは、影響を受けない回答済みの質問は維持し、影響を受ける未回答の質問だけを作り直す（改訂前の質問は質問票に参考として残す） (learned 2026-10-03) <!-- cid:intent-capture:c7 -->
+- 実現可能性の判断は机上の調査だけで済ませず、作業用ディレクトリ（scratchpad）で実際に試して証拠を残す（監視対象の aidlc/・.claude/ には書き込まない） (learned 2026-10-04) <!-- cid:feasibility:c5 -->
+- ALWAYS scope-definition で範囲と期間を検証するときは、期間だけでなく開発者が使える時間（1日あたりの作業時間）と、期間に対する Must の量も質問して確認する (learned 2026-10-10) <!-- cid:scope-definition:c5 -->
+- ALWAYS 前のステージまでの決定で大半が確定しているときは、全項目を一から質問せず叩き台を示して承認を得たうえで、判断の分かれる点だけを個別に質問する (learned 2026-10-10) <!-- cid:scope-definition:c6 -->
